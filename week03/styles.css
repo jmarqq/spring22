@@ -1,2 +1,10 @@
 @charset "utf-8";
 /* CSS Document */
+.body{
+  font-family: Georgia, serif;
+  text-color: #200000;
+  line-height: em 1.4;
+  margin: all-around;
+  background-image: url(https://jmarqq.github.io/spring22/week03/page-bg.gif);
+  background-repeat: no-repeat;
+};
