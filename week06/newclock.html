@@ -40,8 +40,14 @@
       hours = hours - 12;
     }
     }</script>
+    
+     <style>
+      div#clock {
+        /* your style declarations go here */
+      }
+    </style>
   </head>
-  <body onload="updateTime()">
+  <body onload="setInterval('updateTime()',1000)">
     <!-- The content of your web page will go here -->
     <div id="clock"></div>
   </body>
