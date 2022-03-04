@@ -9,6 +9,14 @@
       var hours = now.getHours();
       var minutes = now.getMinutes();
       var seconds = now.getSeconds();
+        
+         // get time of day (am or pm)
+      if (hours >= 12 && hours < 24) {
+        var timeOfDay = 'pm';
+      }
+      else {
+        var timeOfDay = 'am';
+      }
   
       // splice them together into a character string named "currentTime"
       var currentTime = hours + ':' + minutes + ':' + seconds + timeOfDay;
@@ -27,13 +35,7 @@
       seconds = '0' + seconds;
     }
 
-    // get time of day (am or pm)
-    if (hours >= 12 && hours < 24) {
-      var timeOfDay = 'pm';
-    }
-    else {
-      var timeOfDay = 'am';
-    }
+   
 
     // convert hours from 24-hour time to 12-hour time
     if (hours > 12) {
