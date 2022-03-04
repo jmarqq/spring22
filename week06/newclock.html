@@ -12,10 +12,10 @@
         
          // get time of day (am or pm)
       if (hours >= 12 && hours < 24) {
-        var timeOfDay = 'pm';
+        var timeOfDay = ' PM';
       }
       else {
-        var timeOfDay = 'am';
+        var timeOfDay = ' AM';
       }
   
       // splice them together into a character string named "currentTime"
@@ -46,6 +46,9 @@
      <style>
       div#clock {
         /* your style declarations go here */
+        text-align: center;
+        color: red;
+        font-size: 100px;
       }
     </style>
   </head>
