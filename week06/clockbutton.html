@@ -41,6 +41,10 @@
     if (hours > 12) {
       hours = hours - 12;
     }
+      }
+        
+        
+        
     function toggleClock() {
     // get the clock
     var myClock = document.getElementById('clock');
@@ -79,6 +83,6 @@
   <body onload="setInterval('updateTime()',1000)">
     <!-- The content of your web page will go here -->
     <div id="clock"></div>
-    <button onclick="toggleClock()" id="clockButton">Show clock</button>
+    <button onclick="toggleClock()" id="clockButton">Hide clock</button>
   </body>
 </html>
