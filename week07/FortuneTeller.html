@@ -1,0 +1,51 @@
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Teller</title>
+    <script>
+        function Fortune(NumberOfChildren,PartnerName,GeoLocation,JobTitle) {
+          
+        }
+        //number of children, partner's name, geographic location, job title.
+        let NumberOfChildren = [0,1,2,3,4,5];
+        let PartnerName = ["Cindy"];
+        let GeoLocation =  ["Dallas","Houston","Austin"];
+        let JobTitle = ["Software Developer","entrepreneur"];
+        let x = Math.floor(Math.random() * 4);
+        //Output your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+        document.write("You will be a " + JobTitle[x] + " in " + GeoLocation[x] + ", and married to " + PartnerName[x] + " with " + NumberOfChildren[x] + " kids.");
+    
+    </script>
+
+<style>
+    .container {
+      height: 200px;
+      position: relative;
+      border: 3px solid green;
+    }
+    
+    .vertical-center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    </style>
+
+  
+
+</head>
+<body>
+<div class="container">
+  <div class="vertical-center">
+    <button>Centered Button</button>
+  </div>
+</div>   
+</body>
+</html>
