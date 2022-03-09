@@ -10,14 +10,17 @@
     <script>
 
         //number of children, partner's name, geographic location, job title.
-        let NumberOfChildren = [0,1,2,3,4,5];
-        let PartnerName = ["Cindy","Shrek","A rock","Nobody"];
-        let GeoLocation =  ['Dallas','Houston','Austin','Seattle'];
-        let JobTitle = ["Software Developer","entrepreneur","Bum","Millionaire"];
-        let x = Math.floor(Math.random() * 4);
+
+       
         //Output your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
-        function Fortune(NumberOfChildren,PartnerName,GeoLocation,JobTitle) {
-          document.getElementById('ID')("You will be a " + JobTitle[x] + " in " + GeoLocation[x] + ", and married to " + PartnerName[x] + " with " + NumberOfChildren[x] + " kids.");
+        function Fortune() {
+          let NumberOfChildren = ['no',1,2,3,4,5];
+          let PartnerName = ["Cindy","Shrek","A rock","Nobody"];
+          let GeoLocation =  ['Dallas','Houston','Austin','Seattle'];
+          let JobTitle = ["Software Developer","entrepreneur","Bum","Millionaire"];
+          let xx = Math.floor(Math.random() * 4);
+          alert("You will be a " + JobTitle[xx] + " in " + GeoLocation[xx] + ", and married to " + PartnerName[xx] + " with " + NumberOfChildren[xx] + " kids.");
+          
         }
     </script>
 
@@ -62,7 +65,6 @@
   <div class="center">
     <button onclick="Fortune()">Tell me my fortune</button>
     <h1 class="ID">
-      <script>document.write("You will be a " + JobTitle[x] + " in " + GeoLocation[x] + ", and married to " + PartnerName[x] + " with " + NumberOfChildren[x] + " kids.");</script>
     </h1>
   </div>
   
